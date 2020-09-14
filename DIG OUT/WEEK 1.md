@@ -36,15 +36,7 @@ Pooling에는 두 종류가 있는데 하나의 filter에서 가장 큰 값을 �
 
 <br><br>
 
-# SRCNN (Super-resolution Convoutional Neural Network) <br>
-## Patch extraction & representation
-
-## Non-linear mapping
-
-
-## Reconstruction <br>
-
-
-이미지 출처
-https://github.com/minsuk-heo/deeplearning/blob/master/src/CNN_Tensorflow.ipynb
-http://cs231n.stanford.edu/
+참고 문헌 및 이미지 출처 <br>
+모두를 위한 딥러닝, https://www.youtube.com/watchv=Em63mknbtWo&list=PLlMkM4tgfjnLSOjrEJN31gZATbcj_MpUm&index=35 <br>
+https://github.com/minsuk-heo/deeplearning/blob/master/src/CNN_Tensorflow.ipynb <br>
+http://cs231n.stanford.edu/ <br>
