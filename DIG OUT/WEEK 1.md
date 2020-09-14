@@ -1,10 +1,20 @@
 # KEYWORD <br>
-## CNN <br>
+## CNN (Convoutional Neural Network) <br>
+### convolution <br>
+### subsampling <br>
+### fully connected <br>
 
 
-## Patch extraction & representation
 
-## Non-linear mapping
+<br><br>
+## SRCNN (Super-resolution Convoutional Neural Network) <br>
+### Patch extraction & representation
+
+### Non-linear mapping
 
 
-## Reconstruction <br>
+### Reconstruction <br>
+
+
+참고 문헌
+http://cs231n.stanford.edu/
