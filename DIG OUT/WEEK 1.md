@@ -4,10 +4,12 @@ CNN은 image recognition과 같은 분야에서 좋은 성능을 나타낸다. i
 
 ![figure3](https://user-images.githubusercontent.com/57740560/93093000-23603600-f6db-11ea-9025-c3bf8e7d763b.png) <br><br>
 ![figure8](https://user-images.githubusercontent.com/57740560/93099754-5c040d80-f6e3-11ea-9b5d-bc1b3bb99a6e.png) <br><br>
-(두 image는 모두 숫자 2를 표현하고 있지만 image를 벡터화 하면 둘 사이에 연관성을 찾아보기 힘들다.)
+(두 image는 모두 숫자 2를 표현하고 있지만 image를 벡터화 하면 둘 사이에 연관성을 찾아보기 힘들다.)<br><br>
 
 하지만 CNN은 공간 정보를 보존하는 형태로 데이터 입력을 받기 때문에 이미지를 벡터화하는 과정에서 발생하는 정보 손실을 막을 수 있다. <br><br>
 
+![figure9](https://user-images.githubusercontent.com/57740560/93100131-c6b54900-f6e3-11ea-9e9b-9fbffb21c922.png) <br><br>
+(숫자 2를 인식하는데 벡터화를 시키는 것이 아니라 각 부분을 filter를 통해 인식함으로써 공간 정보를 보존한다.) <br><br>
 
 다음은 CNN 구조의 예시이다.<br><br>
 
@@ -16,9 +18,12 @@ CNN은 image recognition과 같은 분야에서 좋은 성능을 나타낸다. i
 
 ## Convolution layer <br><br>
 
-![figure2](https://user-images.githubusercontent.com/57740560/93090286-82bc4700-f6d7-11ea-8e37-9e3a95117cc4.png) <br><br>
+![figure10](https://user-images.githubusercontent.com/57740560/93100487-2b70a380-f6e4-11ea-9dcf-6d767906b065.png) <br><br>
 
-filter는 stride 만큼 옆으로 이동하며 합성곱 연산을 통해 image의 size를 줄인다. 이때 정보를 잃어버리게 되는데, padding을 통해 image의 size가 급격히 작아지는 것을 막고, image의 boundary를 분명하게 할 수 있다. <br><br>
+filter는 stride 만큼 옆으로 이동하며 합성곱 연산을 통해 image의 size를 줄인다. 
+
+
+이때 정보를 잃어버리게 되는데, padding을 통해 image의 size가 급격히 작아지는 것을 막고, image의 boundary를 분명하게 할 수 있다. <br><br>
 
 ![figure5](https://user-images.githubusercontent.com/57740560/93094721-3f64d700-f6dd-11ea-8e7e-d3e49233d61f.png) <br><br>
 
