@@ -1,10 +1,13 @@
 # CNN (Convolutional Neural Network) <br><br>
 
-CNN은 image recognition과 같은 분야에서 좋은 성능을 나타낸다. image data는 인접하는 픽셀간의 상관관계가 높기 때문에 이미지를 벡터화 하면 정보 손실이 발생한다. <br><br>
+CNN은 image recognition과 같은 분야에서 좋은 성능을 나타낸다. image data는 인접하는 픽셀간의 상관관계가 높기 때문에 image를 벡터화 하면 정보 손실이 발생한다. <br><br>
 
 ![figure3](https://user-images.githubusercontent.com/57740560/93093000-23603600-f6db-11ea-9025-c3bf8e7d763b.png) <br><br>
+![figure8](https://user-images.githubusercontent.com/57740560/93099754-5c040d80-f6e3-11ea-9b5d-bc1b3bb99a6e.png) <br><br>
+(두 image는 모두 숫자 2를 표현하고 있지만 image를 벡터화 하면 둘 사이에 연관성을 찾아보기 힘들다.)
 
 하지만 CNN은 공간 정보를 보존하는 형태로 데이터 입력을 받기 때문에 이미지를 벡터화하는 과정에서 발생하는 정보 손실을 막을 수 있다. <br><br>
+
 
 다음은 CNN 구조의 예시이다.<br><br>
 
