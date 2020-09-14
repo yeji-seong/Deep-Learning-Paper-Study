@@ -3,10 +3,6 @@ CNN은 image recognition과 같은 분야에서 좋은 성능을 나타낸다. i
 ![figure3](https://user-images.githubusercontent.com/57740560/93093000-23603600-f6db-11ea-9025-c3bf8e7d763b.png) <br><br>
 하지만 CNN은 공간 정보를 보존하는 형태로 데이터 입력을 받기 때문에 이미지를 벡터화하는 과정에서 발생하는 정보 손실을 막을 수 있다. <br><br>
 
-다음은 CNN 구조의 예시이다. <br><br>
-![figure4](https://user-images.githubusercontent.com/57740560/93093006-25c29000-f6db-11ea-8d57-c9146a8a6495.png) <br><br>
-
-
 ## convolution layer <br><br>
 ![figure1](https://user-images.githubusercontent.com/57740560/93090279-818b1a00-f6d7-11ea-9eb9-eca928e4a1c2.png) <br><br>
 filter는 stride 만큼 옆으로 이동하며 합성곱 연산을 통해 image의 size를 줄인다. 이때 정보를 잃어버리게 되는데, padding을 통해 image의 size가 급격히 작아지는 것을 막고, image의 boundary를 분명하게 할 수 있다.
