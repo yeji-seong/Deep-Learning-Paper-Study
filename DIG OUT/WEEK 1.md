@@ -7,9 +7,9 @@ CNN은 image recognition과 같은 분야에서 좋은 성능을 나타낸다. i
 
 ![figure2](https://user-images.githubusercontent.com/57740560/93090286-82bc4700-f6d7-11ea-8e37-9e3a95117cc4.png) <br><br>
 
-filter는 stride 만큼 옆으로 이동하며 합성곱 연산을 통해 image의 size를 줄인다. 이때 정보를 잃어버리게 되는데, padding을 통해 image의 size가 급격히 작아지는 것을 막고, image의 boundary를 분명하게 할 수 있다.
+filter는 stride 만큼 옆으로 이동하며 합성곱 연산을 통해 image의 size를 줄인다. 이때 정보를 잃어버리게 되는데, padding을 통해 image의 size가 급격히 작아지는 것을 막고, image의 boundary를 분명하게 할 수 있다. <br><br>
 
-
+![figure5](https://user-images.githubusercontent.com/57740560/93094380-cebdba80-f6dc-11ea-9e76-924b0923c630.png) <br><br>
 
 ## pooling layer <br>
 ## fully connected layer <br>
