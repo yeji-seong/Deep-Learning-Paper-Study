@@ -31,9 +31,11 @@ Pooling에는 두 종류가 있는데 하나의 filter에서 가장 큰 값을 �
 
 ## fully connected layer <br><br>
 
-이렇게 Convolution layer와 Pooling layer를 거치는 과정이 feature extraction이며, 이후 fully connected network에 연결한다.
+이렇게 Convolution layer와 Pooling layer를 거치는 과정이 feature extraction이며, 이후 fully connected network에 연결한다. <br><br>
+![figure7](https://user-images.githubusercontent.com/57740560/93097819-04fd3900-f6e1-11ea-88f5-455c2bafcfd9.png) <br><br>
 
 <br><br>
+
 # SRCNN (Super-resolution Convoutional Neural Network) <br>
 ## Patch extraction & representation
 
