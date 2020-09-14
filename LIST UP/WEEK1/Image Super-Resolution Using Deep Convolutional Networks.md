@@ -5,7 +5,8 @@
 
 ## Introduction <br>
 우리는 저해상도 영상과 고해상도 영상 사이의 end-to-end을 직접 학습하는 CNN에 대하여 다룰 것이다. 이 방법은 패치 공간을 모델링하기 위해 명시적으로 학습하지 않는다는 점에서 기존의 example-based approaches와 근본적으로 다르다. 학습은 hidden layers를 통해 달성되며, 패치 추출 및 집계는 convolutional layers로 공식화되어 최적화에 관여한다. <br>
-SRCNN의 특징은 다음과 같다. 첫 번째로, SRCNN은 단순한 구조이며 높은 정확성을 가진다. <br><br>
+SRCNN의 특징은 다음과 같다. <br>
+첫 번째로, SRCNN은 단순한 구조이며 높은 정확성을 가진다. <br><br>
 ![Figure1](https://user-images.githubusercontent.com/57740560/93069093-36154380-f6b8-11ea-81fb-fd70e7c22a13.png) <br>
 두 번째로, 적당한 수의 필터와 레이어를 사용하여 CPU에서도 실제 온라인 사용을 위한 빠른 속도를 달성한다. <br>
 세 번째로, 실험 결과 더 크고 다양한 데이터셋을 사용하거나 더 크고 deep한 모델을 사용할 경우 복구 품질이 더 향상될 수 있음을 알 수 있다. <br>
