@@ -29,9 +29,9 @@ Pooling layer는 Convolution layer로 부터 출력 데이터를 받아 resize�
 
 Pooling에는 두 종류가 있는데 하나의 filter에서 가장 큰 값을 뽑아내는 Max Pooling, filter의 평균을 뽑아내는 Mean Pooling이 있다. 주로 Max Pooling을 많이 사용하는데, 그 이유는 image 중에 특징값을 나타내는 부분을 더 강조해서 볼 것이라는 의미이다. <br><br><br>
 
-## fully connected layer <br>
+## fully connected layer <br><br>
 
-
+이렇게 Convolution layer와 Pooling layer를 거치는 과정이 feature extraction이며, 이후 fully connected network에 연결한다.
 
 <br><br>
 # SRCNN (Super-resolution Convoutional Neural Network) <br>
