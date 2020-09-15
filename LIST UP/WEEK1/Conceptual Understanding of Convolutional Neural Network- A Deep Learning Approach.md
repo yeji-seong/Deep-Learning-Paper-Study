@@ -56,7 +56,15 @@ ReLU은 partial derivative 계산이 간단하고, 비포화상태인 비선형�
 GoogleNet Architecture는 적은 매개 변수로 이미지 속의 물체를 보다 정밀하게 인식할 수 있는 network를 구축하는 것을 목표로 했다. 이는 네트워크의 크기를 증가시킴으로써 layer의 수를 증가시켜 달성할 수 있지만, 네트워크 크기를 증가시키면 training 할 매개변수의 수를 증가시켜 overfitting 문제를 야기한다. filter 수를 늘리면 연산량도 증가해 overhead 증가로 이어지는 것도 큰 단점이다. <br><br>
 
 ### Learning Algorithm <br>
+Learning Algorithm은 weight, bias 등과 같이 다양한 학습 가능한 파라미터에 따라 loss function을 최소화함으로써 network에 유익하다. 주로 Learning Algorithm은 두 가지 범주로 나눌 수 있다. <br>
+The First Order Optimization에는 Jacobian 행렬로 대표되는 gradient 연산이 포함되며, 널리 사용되는 기법은 Gradient Drivate이다. <br>
+반면 Second Order Optimization에는 Hessian Matrix로 대표되는 second order derivative 모델이 포함된다. 그러한 기술 중 하나는 Adam Optimization이다. <br><br>
 
+#### Gradient Descent <br>
+![figure7](https://user-images.githubusercontent.com/57740560/93242238-744a5a00-f7c1-11ea-9192-e632380cbbf7.png) <br><br>
+
+#### Adaptive Moment Estimation (ADAM) Optimization <br>
+![figure8](https://user-images.githubusercontent.com/57740560/93242245-76141d80-f7c1-11ea-90f0-b0a458351ec5.png) <br><br>
 
 논문 출처 <br>
 Sakshi Indolia, Anil Kumar Goswami, S. P. Mishra, Pooja Asopa (2018), "Conceptual Understanding of Convolutional Neural Network- A Deep Learning Approach" <br><br>
