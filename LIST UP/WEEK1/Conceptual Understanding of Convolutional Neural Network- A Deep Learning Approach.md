@@ -43,7 +43,19 @@ Gradient descent는 전체 학습 데이터셋에 대한 cost를 추정해 cost 
 
 #### Activation Function <br>
 ReLU은 partial derivative 계산이 간단하고, 비포화상태인 비선형성인 ReLU가 포화상태인 비선형성 sigmoid보다 training 시간이 짧다. 또한 ReLU에서는 gradients가 사라지지 않기 때문에 비선형성을 도입할 때 sigmoid activation function보다 Rectified Linear Unit (ReLU)를 사용한다. 그러나 네트워크를 통해 큰 gradient가 흐를 때 ReLU의 효율성이 저하되고 weight의 업데이트가 뉴런을 활성화하지 못하게 하여 Dieing ReLU 문제로 이어지게 된다. 이 문제는 Leaky ReLU를 사용하여 해결할 수 있으며, x>0일 경우 f(x)=x로, x<0일 경우 αx로 활성화된다. (α는 작은 상수) <br><br>
+<br>
 
+### Architectures of Convolution Neural Network <br>
+#### LeNet Architecture <br>
+![figure4](https://user-images.githubusercontent.com/57740560/93228532-8bcd1700-f7b0-11ea-8853-8445460ea160.png) <br><br>
+
+#### AlexNet Architecture <br>
+![figure5](https://user-images.githubusercontent.com/57740560/93228536-8cfe4400-f7b0-11ea-8f4a-a27548bb5579.png) <br><br>
+
+#### GoogleNet Architecture <br>
+GoogleNet Architecture는 적은 매개 변수로 이미지 속의 물체를 보다 정밀하게 인식할 수 있는 network를 구축하는 것을 목표로 했다. 이는 네트워크의 크기를 증가시킴으로써 layer의 수를 증가시켜 달성할 수 있지만, 네트워크 크기를 증가시키면 training 할 매개변수의 수를 증가시켜 overfitting 문제를 야기한다. filter 수를 늘리면 연산량도 증가해 overhead 증가로 이어지는 것도 큰 단점이다. <br><br>
+
+### Learning Algorithm <br>
 
 
 논문 출처 <br>
