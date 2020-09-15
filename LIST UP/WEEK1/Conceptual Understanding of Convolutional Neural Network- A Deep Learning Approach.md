@@ -3,7 +3,7 @@
 [ 아직 공부 중이라 잘못된 내용이 있을 수 있습니다. 피드백은 다음 메일로 부탁드립니다. yeji7874@khu.ac.kr ] <br><br>
 
 ## Abstract <br>
-CNN(Convolutional Neural Network)은 복잡한 문제를 해결하는 데 널리 사용되는 deep learning 접근법이다. 
+**CNN(Convolutional Neural Network)** 은 복잡한 문제를 해결하는 데 널리 사용되는 deep learning 접근법이다. 
 이 연구의 동기는 CNN의 다양한 측면의 지식과 이해를 주기 위함이다. 
 본 연구는 CNN의 3가지 가장 일반적인 아키텍처 및 학습 알고리즘과 함께 CNN에 대한 개념적 이해를 제공한다. <br><br>
 
@@ -20,6 +20,17 @@ CNN이 다른 모델들보다 우선시되는 이유는 다음과 같다.
 셋째, 인공신경망(ANN) 모델을 사용해 대규모 네트워크 구현하는 것보다 CNN에서 구현하는 것이 훨씬 쉽다. <br>
 이 연구의 동기는 CNN에 대한 지식과 이해를 더하면서 이론적 틀을 확립하는 것이다. 
 본 연구의 목적은 CNN의 기본 원칙의 융합을 제시하고, 일반 모델, 3가지 가장 일반적인 아키텍처 및 학습 알고리즘에 대한 세부사항을 제공하는 것이다. <br><br>
+
+## Summary <br>
+### General Model <br>
+CNN의 General Model : F(X, W) = Y <br>
+W는 인접한 두 층의 뉴런 사이의 상호연결 강도를 나타내는 weight 벡터를 의미한다. 일반적인 CNN 모델은 convolution layer, pooling layer, activation function, fully connected layer 이렇게 네개의 요소로 구성되어 있다. <br>
+![figure1](https://user-images.githubusercontent.com/57740560/93219569-75ba5900-f7a6-11ea-9840-e2a543a8ad35.png) <br><br>
+
+### Convolution Layer
+분류할 이미지는 입력 layer에 제공되며 출력은 이미지에서 추출한 features을 사용하여 계산한 class label의 예측치이다. weight vector(or filter, kernel)는 옆으로 이동하며 입력 이미지의 feature map을 생성한다. filter는 옆으로 이동하며 convolution 연산을 하는데 이를 통해 단일 layer에서 N개의 features maps이 추출된다. 출력값 $a_{ij}$는 다음과 같이 표현된다. <br>
+$a_{ij} = σ((W * X)_ {ij} + b$
+
 
 논문 출처 <br>
 Sakshi Indolia, Anil Kumar Goswami, S. P. Mishra, Pooja Asopa (2018), "Conceptual Understanding of Convolutional Neural Network- A Deep Learning Approach" <br><br>
