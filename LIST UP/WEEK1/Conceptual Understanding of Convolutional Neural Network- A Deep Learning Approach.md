@@ -23,8 +23,8 @@ CNN이 다른 모델들보다 우선시되는 이유는 다음과 같다.
 
 ## Summary <br>
 ### General Model <br>
-CNN의 General Model : F(X, W) = Y <br>
-W는 인접한 두 층의 뉴런 사이의 상호연결 강도를 나타내는 weight 벡터를 의미한다. 일반적인 CNN 모델은 convolution layer, pooling layer, activation function, fully connected layer 이렇게 네개의 요소로 구성되어 있다. <br>
+**CNN의 General Model : F(X, W) = Y** <br>
+W는 인접한 두 층의 뉴런 사이의 상호연결 강도를 나타내는 weight 벡터를 의미한다. 일반적인 CNN 모델은 **convolution layer, pooling layer, activation function, fully connected layer** 이렇게 네개의 요소로 구성되어 있다. <br>
 ![figure1](https://user-images.githubusercontent.com/57740560/93219569-75ba5900-f7a6-11ea-9840-e2a543a8ad35.png) <br><br>
 
 #### Convolution Layer <br>
@@ -35,11 +35,11 @@ W는 인접한 두 층의 뉴런 사이의 상호연결 강도를 나타내는 w
 #### Pooling Layer <br>
 Pooling 기술의 주요 장점은 training 가능한 매개변수의 수를 현저히 줄이고 번역 불변성을 도입할 수 있다는 것이다. <br>
 ![figure3](https://user-images.githubusercontent.com/57740560/93225004-b4eba880-f7ac-11ea-83f5-2988fddc8a34.png) <br>
-Pooling function은 출력값으로 다른 벡터를 만든다. 대표적인 Pooling 기술에는 average pooling, max-pooling이 있다. <br><br>
+Pooling function은 출력값으로 다른 벡터를 만든다. 대표적인 Pooling 기술에는 **average pooling, max-pooling**이 있다. <br><br>
 
 #### Fully Connected Layer <br>
 반복적으로 Convolution Layer와 Pooling Layer를 거친 1단계 출력값은 Fully Connected Layer로 넘어가 최종 출력값을 얻기 위해 weight vector와 input vector의 dot product를 계산한다.
-Gradient descent는 전체 학습 데이터셋에 대한 cost를 추정해 cost function을 줄이고 한번의 epoch후 파라미터를 업데이트한다. 이 방법은 minima를 산출하지만, 데이터의 크기가 클 경우 상당한 시간이 소요된다. 따라서 Gradient descent는 Stochastic gradient descent로 대체되었다. <br><br>
+**Gradient descent**는 전체 학습 데이터셋에 대한 cost를 추정해 cost function을 줄이고 한번의 epoch후 파라미터를 업데이트한다. 이 방법은 minima를 산출하지만, 데이터의 크기가 클 경우 상당한 시간이 소요된다. 따라서 Gradient descent는 **Stochastic gradient descent**로 대체되었다. <br><br>
 
 #### Activation Function <br>
 ReLU은 partial derivative 계산이 간단하고, 비포화상태인 비선형성인 ReLU가 포화상태인 비선형성 sigmoid보다 training 시간이 짧다. 또한 ReLU에서는 gradients가 사라지지 않기 때문에 비선형성을 도입할 때 sigmoid activation function보다 Rectified Linear Unit (ReLU)를 사용한다. 그러나 네트워크를 통해 큰 gradient가 흐를 때 ReLU의 효율성이 저하되고 weight의 업데이트가 뉴런을 활성화하지 못하게 하여 Dieing ReLU 문제로 이어지게 된다. 이 문제는 Leaky ReLU를 사용하여 해결할 수 있으며, x>0일 경우 f(x)=x로, x<0일 경우 αx로 활성화된다. (α는 작은 상수) <br><br>
