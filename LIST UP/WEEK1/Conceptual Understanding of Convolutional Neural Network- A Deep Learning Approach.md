@@ -22,5 +22,4 @@ CNN이 다른 모델들보다 우선시되는 이유는 다음과 같다.
 논문 출처 <br>
 Sakshi Indolia, Anil Kumar Goswami, S. P. Mishra, Pooja Asopa (2018), "Conceptual Understanding of Convolutional Neural Network- A Deep Learning Approach" <br><br>
 
-**아직 공부 중이라 잘못된 내용이 있을 수 있습니다. 피드백은 언제나 환영입니다** <br>
-yeji7874@khu.ac.kr
+아직 공부 중이라 잘못된 내용이 있을 수 있습니다. 피드백은 언제나 환영입니다. yeji7874@khu.ac.kr
