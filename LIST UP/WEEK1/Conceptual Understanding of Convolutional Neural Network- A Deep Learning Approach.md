@@ -28,8 +28,8 @@ W는 인접한 두 층의 뉴런 사이의 상호연결 강도를 나타내는 w
 ![figure1](https://user-images.githubusercontent.com/57740560/93219569-75ba5900-f7a6-11ea-9840-e2a543a8ad35.png) <br><br>
 
 ### Convolution Layer
-분류할 이미지는 입력 layer에 제공되며 출력은 이미지에서 추출한 features을 사용하여 계산한 class label의 예측치이다. weight vector(or filter, kernel)는 옆으로 이동하며 입력 이미지의 feature map을 생성한다. filter는 옆으로 이동하며 convolution 연산을 하는데 이를 통해 단일 layer에서 N개의 features maps이 추출된다. 출력값 $a_{ij}$는 다음과 같이 표현된다. <br>
-$a_{ij} = σ((W * X)_ {ij} + b$
+분류할 이미지는 입력 layer에 제공되며 출력은 이미지에서 추출한 features을 사용하여 계산한 class label의 예측치이다. weight vector(or filter, kernel)는 옆으로 이동하며 입력 이미지의 feature map을 생성한다. filter는 옆으로 이동하며 convolution 연산을 하는데 이를 통해 단일 layer에서 N개의 features maps이 추출된다. 출력값은 다음과 같이 표현된다. <br>
+![figure2](https://user-images.githubusercontent.com/57740560/93222083-7ef8f500-f7a9-11ea-90cc-e56c00d83b44.png) <br>
 
 
 논문 출처 <br>
