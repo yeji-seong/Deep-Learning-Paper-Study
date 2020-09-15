@@ -64,7 +64,7 @@ The First Order Optimization에는 Jacobian 행렬로 대표되는 gradient 연�
 ![figure7](https://user-images.githubusercontent.com/57740560/93242238-744a5a00-f7c1-11ea-9192-e632380cbbf7.png) <br><br>
 
 #### Adaptive Moment Estimation (ADAM) Optimization <br>
-![figure8](https://user-images.githubusercontent.com/57740560/93243955-ef147480-f7c3-11ea-85f8-5bfa0a04ca27.png) <br><br>
+![figure8](https://user-images.githubusercontent.com/57740560/93244096-25ea8a80-f7c4-11ea-84ac-7908ee5352bb.png) <br><br>
 
 논문 출처 <br>
 Sakshi Indolia, Anil Kumar Goswami, S. P. Mishra, Pooja Asopa (2018), "Conceptual Understanding of Convolutional Neural Network- A Deep Learning Approach" <br><br>
