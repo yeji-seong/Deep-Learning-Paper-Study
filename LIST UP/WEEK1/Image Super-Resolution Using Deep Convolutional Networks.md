@@ -23,5 +23,7 @@ SRCNN의 특징은 다음과 같다. <br>
 ( WEEK2에서 계속 <br>
 https://github.com/yeji-seong/Deep-Learning-Paper-Study/blob/master/LIST%20UP/WEEK2/Image%20Super-Resolution%20Using%20Deep%20Convolutional%20Networks) <br><br>
 
+<a href = "https://github.com/yeji-seong/Deep-Learning-Paper-Study/blob/master/LIST%20UP/WEEK2/Image%20Super-Resolution%20Using%20Deep%20Convolutional%20Networks"> WEEK2</a>
+
 논문 출처<br>
 Chao Dong, Chen Change Loy, Member, IEEE, Kaiming He, Member, IEEE, and Xiaoou Tang, Fellow, IEEE (2015). "Image Super-Resolution Using Deep Convolutional Networks", https://arxiv.org/pdf/1501.00092.pdf.
