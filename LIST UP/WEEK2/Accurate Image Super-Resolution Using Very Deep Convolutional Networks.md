@@ -29,7 +29,7 @@ Scale은 일반적으로 사용자가 지정한다. 가능한 모든 시나리�
 Very deep convolutional network를 기반으로 하는 매우 정확한 SR 방법을 제안한다. Very deep convolutional network는 작은 learning rate를 사용하면 너무 느리게 수렴된다. 높은 learning rate로 convergence rate을 높이면 그라데이션이 폭발적으로 증가하며, 우리는 residual-learning과 gradient clipping으로 문제를 해결한다. 또한, 우리는 multiscale SR 문제에 대처하기 위해 단일 네트워크로 확장한다. 
 이 방법은 그림에 나타낸 것과 같이 비교적 정확하고 빠르다. <br><br>
 
-![figure1](https://user-images.githubusercontent.com/57740560/93742569-4f267300-fc29-11ea-84ce-cdc659a19e3a.png) <br><br>
+![figure1](https://user-images.githubusercontent.com/57740560/93744042-18059100-fc2c-11ea-96b7-8c28b82477fc.png) <br><br>
 
 논문 출처 <br>
 Jiwon Kim, Jung Kwon Lee and Kyoung Mu Lee, Department of ECE, ASRI, Seoul National University, Korea, "Accurate Image Super-Resolution Using Very Deep Convolutional Networks", https://arxiv.org/pdf/1511.04587.pdf
