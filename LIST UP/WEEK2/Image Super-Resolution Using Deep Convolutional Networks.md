@@ -16,7 +16,7 @@
 
 ### Training <br>
 SRCNN의 loss function에서의 error는 높은 PSNR을 얻기 좋은 MSE를 사용한다. Loss function의 식은 다음과 같다. <br><br>
-![figure2](https://user-images.githubusercontent.com/57740560/93796446-d4377980-fc75-11ea-8048-b5ce45daeb40.png) <br><br>
+![figure2](https://user-images.githubusercontent.com/57740560/93793663-12cb3500-fc72-11ea-9fc0-44fc5d304080.png) <br><br>
 X_i: 주어진 HR image, Y_i: X_i에 대응하는 LR image <br>
 Loss는 standard propagation와 stochastic gradient descent에 의해 최소화된다. Training 과정에서 weight는 다음과 같이 업데이트된다. <br><br>
 ![figure2](https://user-images.githubusercontent.com/57740560/93794509-22974900-fc73-11ea-8de1-02ded10272b3.png) <br><br>
