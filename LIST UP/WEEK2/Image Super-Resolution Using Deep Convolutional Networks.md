@@ -27,7 +27,7 @@ Loss는 standard propagation와 stochastic gradient descent에 의해 최소화�
 filter 채널 수에 따른 속도는 뚜렷한 차이를 보이지 않는다. 단, 속도를 높이기 위해서는 좁은 너비의 network를 추천한다. <br><br>
 
 2. filter size에 따른 실험 <br><br>
-![figure4](https://user-images.githubusercontent.com/57740560/93796712-30020280-fc76-11ea-8742-5097dffde049.png) <br><br>
+![figure4](https://user-images.githubusercontent.com/57740560/93796909-7ce5d900-fc76-11ea-9e88-f2c05bb24b51.png) <br><br>
 두 번째 filter size만 변화시키며 관찰했을 때, filter size가 커질수록 PSNR 값이 높다. 즉, SR 결과가 좋다. <br><br>
 
 3. layer 개수에 따른 실험 <br><br>
