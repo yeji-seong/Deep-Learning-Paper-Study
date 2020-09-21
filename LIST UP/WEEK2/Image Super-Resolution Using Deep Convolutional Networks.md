@@ -19,7 +19,7 @@ SRCNN의 loss function에서의 error는 높은 PSNR을 얻기 좋은 MSE를 사
 ![figure2](https://user-images.githubusercontent.com/57740560/93793663-12cb3500-fc72-11ea-9fc0-44fc5d304080.png) <br><br>
 X_i: 주어진 HR image, Y_i: X_i에 대응하는 LR image <br>
 Loss는 standard propagation와 stochastic gradient descent에 의해 최소화된다. Training 과정에서 weight는 다음과 같이 업데이트된다. <br><br>
-![figure2](https://user-images.githubusercontent.com/57740560/93797436-35138180-fc77-11ea-90ad-9e4215642bc7.png) <br><br>
+![figure2](https://user-images.githubusercontent.com/57740560/93797882-c551c680-fc77-11ea-9bf3-aa706365068e.png) <br><br>
 
 ### Experiment <br>
 1. filter 채널 수에 따른 실험 <br><br>
