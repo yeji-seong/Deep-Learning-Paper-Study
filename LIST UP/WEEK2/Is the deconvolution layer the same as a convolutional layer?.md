@@ -1,4 +1,5 @@
-# Deconvolution layer는 convolutional layer와 동일한가?
+# Deconvolution layer는 convolutional layer와 동일한가? <br><br>
+
 [ 아직 공부 중이라 잘못된 내용이 있을 수 있습니다. 다음 메일로 피드백 부탁드립니다. yeji7874@khu.ac.kr ] <br>
 ## Abstract <br>
 기존의 CNN 기반의 SR 기법의 대부분은 우선 bicubic 보간법을 이용해 upsample 한후 convolutional network를 적용한다. 하지만 <a href = "https://arxiv.org/abs/1609.05158"> 논문</a>에서는 대신에 그림에 나온 것처럼 subpixel CNN에 LR을 직접 입력한다. <br>
