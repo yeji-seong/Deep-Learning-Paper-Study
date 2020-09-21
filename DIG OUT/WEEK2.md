@@ -12,5 +12,7 @@
 ## Reconstruction <br>
 다차원의 patch들을 통해 HR image를 복원시키는 과정이다. <br><br>
 
+참고 문헌 및 이미지 출처 <br>
+https://arxiv.org/pdf/1501.00092.pdf
 
 
