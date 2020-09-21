@@ -20,7 +20,7 @@ SRCNN의 특징은 다음과 같다. <br>
 2) 딥러닝 기반 SR method와 기존의 SR method 사이에 관계를 설립한다. <br>
 3) 딥러닝이 SR 문제에 유용하며, 좋은 품질과 속도를 얻을 수 있다는 것을 증명한다. <br><br>
 
-<a href = "https://github.com/yeji-seong/Deep-Learning-Paper-Study/blob/master/LIST%20UP/WEEK2/Image%20Super-Resolution%20Using%20Deep%20Convolutional%20Networks.md"> WEEK2</a> 에서 계속 <br><br>
+[<a href = "https://github.com/yeji-seong/Deep-Learning-Paper-Study/blob/master/LIST%20UP/WEEK2/Image%20Super-Resolution%20Using%20Deep%20Convolutional%20Networks.md"> WEEK2</a> 에서 계속 <br><br>]
 
 논문 출처 <br>
 Chao Dong, Chen Change Loy, Member, IEEE, Kaiming He, Member, IEEE, and Xiaoou Tang, Fellow, IEEE (2015). "Image Super-Resolution Using Deep Convolutional Networks", https://arxiv.org/pdf/1501.00092.pdf.
