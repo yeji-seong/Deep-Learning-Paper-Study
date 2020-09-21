@@ -2,7 +2,7 @@
 
 [ 아직 공부 중이라 잘못된 내용이 있을 수 있습니다. 다음 메일로 피드백 부탁드립니다. yeji7874@khu.ac.kr ] <br><br>
 
-(<a href = "https://github.com/yeji-seong/Deep-Learning-Paper-Study/blob/master/LIST%20UP/WEEK1/Image%20Super-Resolution%20Using%20Deep%20Convolutional%20Networks.md"> WEEK1</a>) <br><br>
+[<a href = "https://github.com/yeji-seong/Deep-Learning-Paper-Study/blob/master/LIST%20UP/WEEK1/Image%20Super-Resolution%20Using%20Deep%20Convolutional%20Networks.md"> WEEK1</a>] <br><br>
 
 ## Summary <br>
 
