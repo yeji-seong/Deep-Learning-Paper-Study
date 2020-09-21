@@ -14,6 +14,7 @@
 
 ![figure1](https://user-images.githubusercontent.com/57740560/93770740-93306c80-fc57-11ea-988d-5e2eadd5e2b5.png) <br><br>
 
+SRCNN에 대해 더 공부한 내용을 <a href = "https://github.com/yeji-seong/Deep-Learning-Paper-Study/blob/master/DIG%20OUT/WEEK%201.md"> KEYWORD</a>에 정리했습니다. <br><br>
 
 논문 출처 <br>
 Chao Dong, Chen Change Loy, Member, IEEE, Kaiming He, Member, IEEE, and Xiaoou Tang, Fellow, IEEE (2015). "Image Super-Resolution Using Deep Convolutional Networks", https://arxiv.org/pdf/1501.00092.pdf.
