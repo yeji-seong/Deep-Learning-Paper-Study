@@ -2,21 +2,21 @@
 
 기본적으로 SR문제는 ILL-posed problem이다. 따라서 LR을 복원한 고해상도 image는 여러개가 될 수 있는데 그 중에서 가장 적합한 HR image를 찾는 것이 SR 문제의 핵심이다. SRCNN은 SR(Super-resolution)을 위한 방법으로 CNN(Convoutional Neural Network)을 사용한 것이다. CNN은 단순한 구조지만 높은 복구 품질과 빠른 속도를 보여준다. <br><br>
 
-![figure4](https://user-images.githubusercontent.com/57740560/93842412-c1eb2900-fcd1-11ea-8e61-6c262f775e10.png) <br><br>
+![figure4](https://user-images.githubusercontent.com/57740560/93842567-56ee2200-fcd2-11ea-95d0-4e109a256031.png) <br><br>
 
 ## Patch extraction & representation <br>
 저해상도 image에서 patch들을 추출하는 과정이다. 이 patch들은 특징을 가진다. 첫 번째 layer는 다음과 같이 연산 F1으로 표현된다. <br><br>
-![figure1](https://user-images.githubusercontent.com/57740560/93841630-2789e600-fccf-11ea-95f3-b457c4ef60ca.png) <br><br>
+![figure1](https://user-images.githubusercontent.com/57740560/93842559-52c20480-fcd2-11ea-8eeb-ab45d6306e79.png) <br><br>
 여기서 W1과 B1은 각각 filters와 biases를 의미하며, * 는 convolutional 연산이다. network의 최적화에는 이러한 bases의 최적화가 포함된다. W1은 c×f1×f1의 n1 필터에 해당한다. 여기서 c는 입력 image의 채널 수, f1은 filter의 공간 크기다. 이후 filter의 결과에 ReLU 함수를 적용한다. <br><br>
 
 ## Non-linear mapping <br>
 첫 번째 layer에서 각각의 patch에서 n1 차원의 feature을 추출했다면, 두 번째 layer에서는 n1 차원의 벡터들을 non-linear하게 n2 차원의 벡터들로 mapping한다. 두 번째 layer의 연산은 다음과 같이 표현된다. <br><br>
-![figure2](https://user-images.githubusercontent.com/57740560/93842003-4e94e780-fcd0-11ea-8fa2-c56683e75bd5.png) <br><br>
+![figure2](https://user-images.githubusercontent.com/57740560/93842565-56558b80-fcd2-11ea-80f5-863ff04c3995.png) <br><br>
 W2은 n1×f2×f2의 n2 filters에 해당하며, B2는 n2 차원이다. 각각의 n2 차원의 벡터는 HR patch를 의미한다. <br><br>
 
 ## Reconstruction <br>
 다차원의 patch들을 통해 HR image를 복원시키는 과정이다. HR image를 생성하는 layer는 다음과 같이 정의할 수 있다. <br><br>
-![figure3](https://user-images.githubusercontent.com/57740560/93842159-e09cf000-fcd0-11ea-9141-2b4545256a71.png) <br><br>
+![figure3](https://user-images.githubusercontent.com/57740560/93842566-56558b80-fcd2-11ea-946b-8ff70952be12.png)  <br><br>
 W3은 n2×f3×f3의 c filters에 해당하며, B3는 c 차원이다. <br><br>
 
 세 가지 연산은 다른 직관에 의해 공식화되었지만, 모두 convolutional layer라는 동일한 형태로 이어진다. 이 세 가지 연산은 모두 합쳐져 convolutional layer를 만든다. 이 모델에서 weight와 biases는 최적화된다. <br><br>
