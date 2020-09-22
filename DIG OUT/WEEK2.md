@@ -4,8 +4,8 @@
 
 ## End-to-end mapping
 SRCNN은 end-to-end mapping을 통해 학습한다. End-to-end 딥러닝은 학습시스템에서 거쳐야할 여러 단계의 과정을 하나의 network로 구성해 한번에 처리하는 것을 말한다. <br><br>
-![figure5](https://user-images.githubusercontent.com/57740560/93844252-86ebf400-fcd7-11ea-85b7-3476e6e15bd5.png)
-![figure6](https://user-images.githubusercontent.com/57740560/93844255-881d2100-fcd7-11ea-9d1f-e6f24e748327.png) <br>
+![figure5](https://user-images.githubusercontent.com/57740560/93844550-725c2b80-fcd8-11ea-8f0a-cf333586b5a7.png)
+![figure6](https://user-images.githubusercontent.com/57740560/93844551-738d5880-fcd8-11ea-92c6-d63266e55bfa.png) <br>
 End-to-end learning의 장단점을 정리하면 다음과 같다. <br>
 End-to-end learning의 경우에는 직접 설계한 파이프라인보다 중간 과정이 생략됨으로써 단순화될 수 있다.
 하지만, End-to-end 방식은 데이터의 정보에만 의존해서 과정을 진행하기 때문에 학습 데이터가 적을 경우 직접 설계된 파이프라인 구조보다 더 안좋게 동작할 수 있다.
