@@ -38,6 +38,7 @@ W3은 n2×f3×f3의 c filters에 해당하며, B3는 c 차원이다. <br><br>
 
 <br><br>
 참고 문헌 및 이미지 출처 <br>
-https://arxiv.org/pdf/1501.00092.pdf
-https://www.edwith.org/deeplearningai3/lecture/34893/
+https://arxiv.org/pdf/1501.00092.pdf <br>
+https://www.edwith.org/deeplearningai3/lecture/34893/ <br>
+
 
