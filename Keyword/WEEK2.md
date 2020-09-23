@@ -24,7 +24,7 @@ End-to-end learning의 경우에는 직접 설계한 파이프라인보다 중�
 여기서 W1과 B1은 각각 filters와 biases를 의미하며, * 는 convolutional 연산이다. network의 최적화에는 이러한 bases의 최적화가 포함된다. W1은 c×f1×f1의 n1 필터에 해당한다. 여기서 c는 입력 image의 채널 수, f1은 filter의 공간 크기다. 이후 filter의 결과에 ReLU 함수를 적용한다. <br><br>
 
 ## Non-linear mapping <br>
-첫 번째 layer에서 각각의 patch에서 n1 차원의 feature을 추출했다면, 두 번째 layer에서는 n1 차원의 벡터들을 non-linear하게 n2 차원의 벡터들로 mapping한다. 두 번째 layer의 연산은 다음과 같이 표현된다. <br><br>
+첫 번째 layer에서 각각의 patch에서 n1 의 feature을 추출했다면, 두 번째 layer에서는 n1 차원의 벡터들을 non-linear하게 n2 차원의 벡터들로 mapping한다. 두 번째 layer의 연산은 다음과 같이 표현된다. <br><br>
 ![figure3](https://user-images.githubusercontent.com/57740560/93842833-104cf780-fcd3-11ea-8379-7839ee336350.png) <br><br>
 W2은 n1×f2×f2의 n2 filters에 해당하며, B2는 n2 차원이다. 각각의 n2 차원의 벡터는 HR patch를 의미한다. <br><br>
 
