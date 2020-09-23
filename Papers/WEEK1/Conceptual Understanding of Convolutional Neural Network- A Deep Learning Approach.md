@@ -1,7 +1,5 @@
 # Convolutional Neural Network의 개념적 이해 - Deep Learning 접근 <br><br>
 
-[ 아직 공부 중이라 잘못된 내용이 있을 수 있습니다. 다음 메일로 피드백 부탁드립니다. yeji7874@khu.ac.kr ]  <br><br>
-
 ## Abstract <br>
 **CNN(Convolutional Neural Network)** 은 복잡한 문제를 해결하는 데 널리 사용되는 deep learning 접근법이다. 
 이 연구의 동기는 CNN의 다양한 측면의 지식과 이해를 주기 위함이다. 
