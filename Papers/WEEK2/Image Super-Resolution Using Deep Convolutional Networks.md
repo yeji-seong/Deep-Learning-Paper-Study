@@ -1,7 +1,5 @@
 # Deep Convolutional Networks를 이용한 이미지 Super-Resolution <br><br>
 
-[ 아직 공부 중이라 잘못된 내용이 있을 수 있습니다.] <br><br>
-
 [<a href = "https://github.com/yeji-seong/Deep-Learning-Paper-Study/blob/master/Papers/WEEK1/Image%20Super-Resolution%20Using%20Deep%20Convolutional%20Networks.md"> WEEK1</a>] <br><br>
 
 ## Summary <br>
