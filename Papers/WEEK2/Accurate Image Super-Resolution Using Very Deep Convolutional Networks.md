@@ -1,7 +1,5 @@
 # 초심층 Convolutional Networks를 이용한 정확한 Image Super-Resolution <br><br>
 
-[ 아직 공부 중이라 잘못된 내용이 있을 수 있습니다. 다음 메일로 피드백 부탁드립니다. yeji7874@khu.ac.kr ]  <br><br>
-
 ## Abstract <br>
 이 논문에서는 매우 정확한 단일 이미지 SR 방법(VDSR)을 제시한다. 네트워크 깊이를 증가시키면 정확도가 크게 향상된다는 사실에 의거해 우리는 최종 모델에서 20개의 weight layers를 사용한다.
 deep network structure에서 여러 번 작은 filter를 계단식으로 배치하여 큰 이미지 영역에 걸친 정보를 효율적으로 얻는다. <br>
