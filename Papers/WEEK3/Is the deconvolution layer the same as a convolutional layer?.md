@@ -4,7 +4,7 @@
 
 ## Summary <br>
 ### Section 1: Transposed convolution and sub-pixel convolutional layers <br>
-![figure1](https://user-images.githubusercontent.com/57740560/94162241-79925d80-fec1-11ea-9814-83a933a3c429.png) <br>
+![figure1](https://user-images.githubusercontent.com/57740560/94166027-d1cb5e80-fec5-11ea-9b36-c48538e5f23c.png) <br>
 그림에서 회색 영역으로 표시된 x는 0 패딩을 의미한다. f에서의 회색 영역은 곱으로 0이 된 영역이다. 따라서 화살표 방향에 따라 size가 8인 x는 size가 4인 filter(stride = 2)에 의해 size 5인 y로 downsampling 된다. <br><br>
 
 ![figure2](https://user-images.githubusercontent.com/57740560/94163300-a3984f80-fec2-11ea-82fc-4648a13c1cc2.png) <br>
