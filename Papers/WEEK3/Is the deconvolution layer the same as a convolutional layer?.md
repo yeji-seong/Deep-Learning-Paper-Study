@@ -3,7 +3,7 @@
 [<a href = "https://github.com/yeji-seong/Deep-Learning-Paper-Study/blob/master/Papers/WEEK2/Is%20the%20deconvolution%20layer%20the%20same%20as%20a%20convolutional%20layer%3F.md"> WEEK2</a>] <br><br>
 
 ## Summary <br>
-### Section 1: Transposed convolution and sub-pixel convolutional layers <br>
+### Section 1: Transposed convolution and sub-pixel convolutional layers <br><br>
 ![figure1](https://user-images.githubusercontent.com/57740560/94166027-d1cb5e80-fec5-11ea-9b36-c48538e5f23c.png) <br>
 그림에서 회색 영역으로 표시된 x는 0 패딩을 의미한다. f에서의 회색 영역은 곱으로 0이 된 영역이다. 따라서 화살표 방향에 따라 size가 8인 x는 size가 4인 filter(stride = 2)에 의해 size 5인 y로 downsampling 된다. <br><br>
 
