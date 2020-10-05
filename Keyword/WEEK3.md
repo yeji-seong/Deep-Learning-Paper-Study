@@ -1,8 +1,8 @@
 # ESCPN (Efficient Sub-Pixel Convolutional Neural Network) <br><br>
 
 ![figure1](https://user-images.githubusercontent.com/57740560/93749143-5c952a80-fc34-11ea-8062-63b468b769a4.png) <br>
-ESCPN은 기존의 SRCNN에 sub-pixel layer를 적용시켜 image upscale(확대)을 마지막 layer에서 함으로써 메모리, 속도 측면에서 효율을 높였다. 기존의 <a href = "https://github.com/yeji-seong/Deep-Learning-Paper-Study/blob/master/Keyword/WEEK2.md"> SRCNN</a>이 LR image를 upscale 한 후 feature map 추출 및 non=linear mapping, reconstruction 했다면 ESPCN에서는 LR image에서 feature map을 추출한 뒤, 이를 shuffling해 HR image를 구현한다. <br><br><br>
-
+ESCPN은 기존의 SRCNN에 sub-pixel layer를 적용시켜 image upscale(확대)을 마지막 layer에서 함으로써 메모리, 속도 측면에서 효율을 높였다. 기존의 <a href = "https://github.com/yeji-seong/Deep-Learning-Paper-Study/blob/master/Keyword/WEEK2.md"> SRCNN</a>이 LR image를 upscale 한 후 feature map 추출 및 non-linear mapping, reconstruction 했다면 ESPCN에서는 LR image에서 feature map을 추출한 뒤, 이를 shuffling해 HR image를 구현한다. <br>
+SRCNN에서는 image를 bricubic interpolation으로 upscale해 나온 output인 LR image를 convolutional layer의 input 값으로 사용한다. 이때 사용하는 bricubic interpolation는  deconvolutional layer의 한 종류이다. ESPCN에서는 upscale의 방법으로 deconvolutional layer 대신에 sub-pixel convolutional layer를 사용한다. <br><br>
 
 일반적으로 Transposed Convolution 와 Deconvolution을 혼동하는 경우가 많다. 둘은 모두 Convolution에서 사용한 Input 이미지 크기의 Output을 출력하지만, 서로 다른 연산이다. 차이점은 아래와 같다. <br><br>
 ![figure3](https://user-images.githubusercontent.com/57740560/95059132-75710600-0733-11eb-9f0f-10bf396d2f1d.png) <br>
@@ -21,7 +21,7 @@ Transposed Convolution은 Input 이미지 크기의 이미지를 얻기 위해 C
 
 ## Sub-pixel convolutional layer <br><br>
 
-
+<a href = "https://github.com/yeji-seong/Deep-Learning-Paper-Study/blob/master/Papers/WEEK3/Is%20the%20deconvolution%20layer%20the%20same%20as%20a%20convolutional%20layer%3F.md">논문</a>에서 알 수 있듯이 filter의 요소를 뒤집으면 Sub-pixel convolutional layer와 Transposed convolutional layer는 근본적으로 동일하다. <br><br>
 
 
 
