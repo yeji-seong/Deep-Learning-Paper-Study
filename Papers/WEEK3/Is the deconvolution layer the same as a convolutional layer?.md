@@ -28,8 +28,7 @@ Step2. Step2. sub-pixel space에서 (1, 1, 4, 4)인 kernel과 합성곱 연산�
 ![figure2](https://user-images.githubusercontent.com/57740560/95040001-5bbcc800-070d-11eb-9343-65d79d09aa41.png) <br><br>
 
 ### Section 3: What does this mean? <br><br>
-결론적으로 deconvolutional layer는 데이터의 차원이 d인 r^d 채널 출력을 가진 LR의 convolution과 동일하다. 따라서 하나의 HR image/ feature map을 나타내기 위해 LR image/ feature map의 r^2 채널을 사용하는 방법을 배울 수 있다는 것을 의미한다. 
-그리고 r^2 채널을 만드는 데 사용되는 연산은 단순한 convolution일 뿐, 그 이전에 n_l-1 feature map을 만드는 데 사용한 연산과 다를 바 없다. <br><br>
+결론적으로 deconvolutional layer는 데이터의 차원이 d인 r^d 채널 출력을 가진 LR의 convolution과 동일하다. 따라서 하나의 HR image/ feature map을 나타내기 위해 LR image/ feature map의 r^2 채널을 사용하는 방법을 배울 수 있다는 것을 의미한다. <br><br>
 
 논문 출처 <br>
 Wenzhe Shi, Jose Caballero, Lucas Theis, Ferenc Huszar, Andrew Aitken, Christian Ledig, Zehan Wang, "Is the deconvolution layer the same as a convolutional layer?", https://arxiv.org/abs/1609.07009
