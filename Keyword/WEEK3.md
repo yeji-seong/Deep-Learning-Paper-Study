@@ -1,7 +1,9 @@
 # ESCPN (Efficient Sub-Pixel Convolutional Neural Network) <br><br>
 
 ![figure1](https://user-images.githubusercontent.com/57740560/93749143-5c952a80-fc34-11ea-8062-63b468b769a4.png) <br>
-ESCPN은 기존의 SRCNN에 sub-pixel layer를 적용시켜 image upscale(확대)을 마지막 layer에서 함으로써 메모리, 속도 측면에서 효율을 높였다. 기존의 SRCNN이 LR image를 upscale 한 후 feature map 추출 및 non=linear mapping, reconstruction 했다면 ESPCN에서는 LR image에서 feature map을 추출한 뒤, 이를 shuffling해 HR image를 구현한다. <br><br><br>
+ESCPN은 기존의 <a href = "https://github.com/yeji-seong/Deep-Learning-Paper-Study/blob/master/Keyword/WEEK2.md"> SRCNN</a>에 sub-pixel layer를 적용시켜 image upscale(확대)을 마지막 layer에서 함으로써 메모리, 속도 측면에서 효율을 높였다. 기존의 SRCNN이 LR image를 upscale 한 후 feature map 추출 및 non=linear mapping, reconstruction 했다면 ESPCN에서는 LR image에서 feature map을 추출한 뒤, 이를 shuffling해 HR image를 구현한다. <br><br><br>
+
+
 
 
 일반적으로 Transposed Convolution 와 Deconvolution을 혼동하는 경우가 많다. 둘은 모두 Convolution에서 사용한 Input 이미지 크기의 Output을 출력하지만, 서로 다른 연산이다. 차이점은 아래와 같다. <br><br>
