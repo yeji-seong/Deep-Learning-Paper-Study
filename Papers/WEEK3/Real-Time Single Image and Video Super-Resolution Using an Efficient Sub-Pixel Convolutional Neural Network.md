@@ -5,3 +5,6 @@
 
 ## Introduction <br>
 SR은 여러 해를 가질 수 있는 ill-posed problem이다. SR 기법의 가정이 되는 주요 가정은 고주파 데이터의 많은 부분이 중복되므로 저주파 구성 요소에서 정확하게 재구성할 수 있다는 것이다. 따라서 SR은 추론 문제로, 이미지 통계의 방식으로 접근할 수 있다. 기존의 방법들은 계산이 복잡한 이미지 처리와 융합 단계를 거쳐야하지만, 제안된 방법은 단일 LR에서 누락된 HR 정보를 복구하기 위해 자연 데이터에 존재하는 implicit redundancy를 학습하고자 한다. <br><br>
+
+논문 출처 <br>
+Wenzhe Shi, Jose Caballero, Ferenc Huszár, Johannes Totz, Andrew P. Aitken, Rob Bishop, Daniel Rueckert, Zehan Wang, "Real-Time Single Image and Video Super-Resolution Using an Efficient Sub-Pixel Convolutional Neural Network", https://arxiv.org/abs/1609.05158
