@@ -32,7 +32,7 @@ filter 채널 수에 따른 속도는 뚜렷한 차이를 보이지 않는다. �
 ![figure5](https://user-images.githubusercontent.com/57740560/93795663-aa318780-fc74-11ea-8e4c-1158ef1780b1.png) <br>
 layer 개수가 많은 것(deep network)이 항상 좋은 결과를 도출하지는 않는다. <br>
 (<strike>이 <a href = "https://github.com/yeji-seong/Deep-Learning-Paper-Study/blob/master/Papers/WEEK2/Accurate%20Image%20Super-Resolution%20Using%20Very%20Deep%20Convolutional%20Networks.md">논문* </a>에는 네트워크 깊이를 증가시키면 정확도가 올라간다고 했는데,,?!</strike>) <br>
-+) 네트워크가 깊어지면 Backpropagation 과정에서 Gradient Vanishing 나 Gradient Exploding 문제로 파라미처 학습이 제대로 이루어지지 않을 수 있음 
++) 네트워크가 깊어지면 Backpropagation 과정에서 Gradient Vanishing 나 Gradient Exploding 문제로 파라미터 학습이 제대로 이루어지지 않을 수 있음 
 => 그래서 위의 논문* </a>에서는 잔여 학습이라는 학습 방법을 도입시켜 깊은 네트워크에서도 해당 문제 없이 성능을 높임 <br><br>
 
 SRCNN에 대해 더 공부한 내용을 <a href = "https://github.com/yeji-seong/Deep-Learning-Paper-Study/blob/master/Keyword/WEEK2.md"> KEYWORD</a>에 정리했습니다. <br><br>
