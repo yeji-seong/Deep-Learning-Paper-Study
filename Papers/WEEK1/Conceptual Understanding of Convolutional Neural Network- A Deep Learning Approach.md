@@ -55,7 +55,7 @@ GoogleNet Architecture는 적은 매개 변수로 이미지 속의 물체를 보
 
 ### Learning Algorithm <br>
 **Learning Algorithm**은 weight, bias 등과 같이 다양한 학습 가능한 파라미터에 따라 loss function을 최소화함으로써 network에 유익하다. 주로 Learning Algorithm은 두 가지 범주로 나눌 수 있다. <br>
-The First Order Optimization에는 Jacobian 행렬로 대표되는 gradient 연산이 포함되며, 널리 사용되는 기법은 **Gradient Drivate**이다. <br>
+The First Order Optimization에는 Jacobian 행렬로 대표되는 gradient 연산이 포함되며, 널리 사용되는 기법은 **Gradient Descent**이다. <br>
 반면 Second Order Optimization에는 Hessian Matrix로 대표되는 second order derivative 모델이 포함된다. 그러한 기술 중 하나는 **Adam Optimization**이다. <br><br>
 
 #### Gradient Descent <br>
