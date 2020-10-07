@@ -6,16 +6,16 @@
 본 연구는 CNN의 3가지 가장 일반적인 아키텍처 및 학습 알고리즘과 함께 CNN에 대한 개념적 이해를 제공한다. <br><br>
 
 ## Introduction <br>
-feature extraction이 필요한 머신러닝에 반해 딥러닝 기법은 feature extraction이 필요하지 않고, 당면한 문제에 대해 중요한 기능을 자동으로 추출한다.
 딥러닝 모델은 다양한 특성을 학습할 수 있는 여러 layer들로 구성되어 있어 구별되는 features를 학습할 수 있다. <br>
 딥러닝 아키텍처로는 deep belief networks, recurrent neural networks, convolution neural networks 등이 있다.
 그 중, CNN은 deep feed-forward 구조를 가지고 있으며, fully connected layers에 비해 일반화 하는데 더 뛰어나다.
-CNN의 detectors는 매우 추상적인 특징들을 배울 수 있으며, 효율적으로 사물을 식별할 수 있다. <br>
-CNN이 다른 모델들보다 우선시되는 이유는 다음과 같다. 
-첫째, CNN을 적용하기 위한 주요 관심사는 weight를 공유하는 것이다. 
-따라서 훈련을 필요로 하는 매개변수가 감소하여 일반화가 개선되며, 매개 변수가 적어 훈련이 수월하고 overfitting의 위험도 없다.
+CNN의 detectors는 추상적인 특징들을 배울 수 있으며, 사물 식별에 효율적이다. <br><br>
+
+CNN의 장점은 다음과 같다. <br>
+첫째, CNN의 주요 관심사는 weight이기 때문에 훈련을 필요로 하는 매개변수가 감소하여 훈련이 수월하고 overfitting의 위험도 없다.
 둘째, 분류 단계는 특징 추출 단계와 통합되어 있으며, 둘 다 학습 과정을 이용한다. 
-셋째, 인공신경망(ANN) 모델을 사용해 대규모 네트워크 구현하는 것보다 CNN에서 구현하는 것이 훨씬 쉽다. <br>
+셋째, 인공신경망(ANN) 모델을 사용해 대규모 네트워크 구현하는 것보다 CNN에서 구현하는 것이 훨씬 쉽다. <br><br>
+
 이 연구의 동기는 CNN에 대한 지식과 이해를 더하면서 이론적 틀을 확립하는 것이다. 
 본 연구의 목적은 CNN의 기본 원칙의 융합을 제시하고, 일반 모델, 3가지 가장 일반적인 아키텍처 및 학습 알고리즘에 대한 세부사항을 제공하는 것이다. <br><br>
 
@@ -31,7 +31,7 @@ W는 인접한 두 층의 뉴런 사이의 상호연결 강도를 나타내는 w
 여기서, X는 layer로 받은 입력값, W는 input 위로 이동하는 filter, b는 bias, * 는 convolution 연산, σ는 network에서 비선형성을 의미한다. <br><br>
 
 #### Pooling Layer <br>
-Pooling 기술의 주요 장점은 training 가능한 매개변수의 수를 현저히 줄이고 번역 불변성을 도입할 수 있다는 것이다. <br><br>
+Pooling 기술의 주요 장점은 training 가능한 매개변수의 수를 줄일 수 있다는 것이다. <br><br>
 ![figure3](https://user-images.githubusercontent.com/57740560/93225004-b4eba880-f7ac-11ea-83f5-2988fddc8a34.png) <br>
 Pooling function은 출력값으로 다른 벡터를 만든다. 대표적인 Pooling 기술에는 **average pooling, max-pooling**이 있다. <br><br>
 
