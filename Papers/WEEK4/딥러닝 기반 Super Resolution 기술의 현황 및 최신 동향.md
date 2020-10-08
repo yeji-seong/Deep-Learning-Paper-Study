@@ -12,7 +12,7 @@
 ### SRCNN
 처음으로 딥러닝을 도입한 네트워크는 **Super Resolution Convolutional Neural Network(SRCNN)** 이다. 바이큐빅 보간법을 적용해 업스케일링 된 이미지는 CNN 네트워크를 통과하며 Patch Extraction, Nonlinear Mapping, Reconstruction의 과정을 거치게 된다. <br><br>
 
-## FSRCNN
+### FSRCNN
 SRCNN 이후 LR 영상을 바이큐빅 보간법을 사용해 업스케일링 하지 않고 바로 네트워크에 넣는 **FSRCNN**이 나왔다. 기존 SRCNN에서 사용했던 방법대로 입력 LR 영상을 HR의 해상도로 업스케일링 시켜 연산을 하면 속도와 메모리 측면에서 비효율적이라는 사실에 기반해 해당 네트워크에서는 영상의 해상도를 높이기 위해 Deconvolution layer를 사용하였다. 그 결과 FSRCNN은 파라미터의 수가 감소하고 연산 속도가 빨라졌으며 성능 또한 향상했다. <br><br>
 
 ![figure2](https://user-images.githubusercontent.com/57740560/95460762-50d59200-09b0-11eb-87ce-c1287c7c7fed.png) <br><br>
@@ -28,13 +28,20 @@ VDSR 등장 이후, Residual learning을 이용해 매우 깊고 넓은 네트�
 ![figure4](https://user-images.githubusercontent.com/57740560/95460765-5206bf00-09b0-11eb-8789-9e44bf2cca0a.png) <br><br>
 
 ### SRGAN
+**SRGAN**은 기존의 모델들과는 달리 PSNR의 수치를 낮추는 것보다 Perceptual loss를 통해 인지적으로 선명한 영상을 얻는 것에 초점을 둔 모델이다. 따라서 이전 SR 모델 대비 PSNR 수치는 낮지만 인지적으로 뛰어난 영상을 복원할 수 있으며, 높은 업스케일링 배수에 보다 더 잘 적용되었다. <br><br>
 
+![figure5](https://user-images.githubusercontent.com/57740560/95461985-dc9bee00-09b1-11eb-90ba-dad34420abea.png) <br><br>
+
+### SRResNet
+이후 SRGAN 동일 저자는 SRGAN과 동일한 네트워크 구조를 가지지만 기존의 딥러닝 기반 SR 알고리즘과 동일하게 MSE loss 함수를 사용하는 **SRResNet**을 제안하였다. <br><br>
 
 
 ## 네트워크 결과 성능 비교 <br>
+다음은 SR을 평가할 때 널리 쓰이는 데이터 셋을 가지고 HR 영상의 결과는 비교한 표이다. <br><br>
 
+![figure6](https://user-images.githubusercontent.com/57740560/95462739-dfe3a980-09b2-11eb-9857-235b1b5d203f.png) <br><br>
 
-
+업스케일링 배수 2,3,4에 대하여 딥러닝 기반의 SR은 기존의 방법보다 우수하며, 특히 EDSR은 그중 가장 성능이 높았다. <br><br>
 
 Reference <br>
 서유림, 강석주, "딥러닝 기반 Super Resolution 기술의 현황 및 최신 동향", http://www.kibme.org/resources/journal/20200504094149078.pdf
