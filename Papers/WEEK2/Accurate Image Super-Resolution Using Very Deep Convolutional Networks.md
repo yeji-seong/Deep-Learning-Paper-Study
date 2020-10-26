@@ -24,11 +24,11 @@
 우리는 훈련 속도를 높일 수 있는 residual-learning과 높은 learning rate을 적용한다. LR image와 HR image는 동일한 정보를 공유하므로 HR image와 LR image의 차이인 residual image를 모델링하는 것이 유리하다. 또한 learning rate는 SRCNN보다 10^4배 더 높다. <br><br>
 
 ### Scale Factor
-Scale은 일반적으로 사용자가 지정한다. 가능한 모든 시나리오에 대비하여 규모에 의존하는 많은 모델을 훈련하고 저장하는 것은 비현실적이다. 또한 multi-scalefactor에는 하나의 convolutional network가 충분하다. <br><br>
+가능한 모든 시나리오에 대비하여 규모에 의존하는 많은 모델을 훈련하고 저장하는 것은 비현실적이므로 Scale은 일반적으로 사용자가 지정한다. multi-scale-factor SR에는 convolutional network 하나면 충분하다는 것을 밝혔다. <br><br>
 
 ### Contribution
-Very deep convolutional network를 기반으로 하는 매우 정확한 SR 방법을 제안한다. 기존의 Very deep convolutional network는 작은 learning rate를 사용하면 수렴 속도가 느리며, 높은 learning rate로 convergence rate을 높이면 Gradient Exploding 문제가 발생한다. 따라서 residual-learning과 gradient clipping을 도입해 문제를 해결한다. 또한, 우리는 multiscale SR 문제를 해결하기 위해 단일 네트워크로 확장한다. 
-이 방법은 그림에 나타낸 것과 같이 비교적 정확하고 빠르다. <br><br>
+요약하면, 이 논문에서는 Very deep convolutional network를 기반으로 하는 매우 정확한 SR 방법을 제안한다. 기존의 Very deep convolutional network는 작은 learning rate를 사용하면 수렴 속도가 느리며, 높은 learning rate로 convergence rate을 높이면 Gradient Exploding 문제가 발생한다. 따라서 residual-learning과 gradient clipping을 도입해 문제를 해결한다. <br>
+또한, 우리는 단일 네트워크에서의 multiscale SR 문제를 다룬다. 이 방법은 그림에 나타낸 것과 같이 비교적 정확하고 빠르다. <br><br>
 
 ![figure1](https://user-images.githubusercontent.com/57740560/93744042-18059100-fc2c-11ea-96b7-8c28b82477fc.png) <br><br>
 
