@@ -27,7 +27,8 @@
 가능한 모든 시나리오에 대비하여 규모에 의존하는 많은 모델을 훈련하고 저장하는 것은 비현실적이므로 Scale은 일반적으로 사용자가 지정한다. multi-scale-factor SR에는 convolutional network 하나면 충분하다는 것을 밝혔다. <br><br>
 
 ### Contribution
-요약하면, 이 논문에서는 Very deep convolutional network를 기반으로 하는 매우 정확한 SR 방법을 제안한다. 기존의 Very deep convolutional network는 작은 learning rate를 사용하면 수렴 속도가 느리며, 높은 learning rate로 convergence rate을 높이면 Gradient Exploding 문제가 발생한다. 따라서 residual-learning과 gradient clipping을 도입해 문제를 해결한다. <br>
+요약하면, 이 논문에서는 Very deep convolutional network를 기반으로 하는 매우 정확한 SR 방법을 제안한다. <br>
+기존의 Very deep convolutional network는 작은 learning rate를 사용하면 수렴 속도가 느리며, 높은 learning rate로 convergence rate을 높이면 Gradient Exploding 문제가 발생한다. 따라서 residual-learning과 gradient clipping을 도입해 문제를 해결한다. <br>
 또한, 우리는 단일 네트워크에서의 multiscale SR 문제를 다룬다. 이 방법은 그림에 나타낸 것과 같이 비교적 정확하고 빠르다. <br><br>
 
 ![figure1](https://user-images.githubusercontent.com/57740560/93744042-18059100-fc2c-11ea-96b7-8c28b82477fc.png) <br><br>
