@@ -3,16 +3,15 @@
 [<a href = "https://github.com/yeji-seong/Deep-Learning-Paper-Study/blob/master/Papers/WEEK2/Accurate%20Image%20Super-Resolution%20Using%20Very%20Deep%20Convolutional%20Networks.md"> WEEK2</a>] <br><br>
 
 ## 기존의 SRCNN 문제점과 이를 보완한 VDSR
-기존의 SRCNN의 문제점은 다음과 같다. <br><br>
-
-Layer가 3개이기 때문에 좁은 context 밖에 반영하지 못 한다. <br>
-학습 시 수렴 속도가 느리다. <br> 
-Single scale에 대해서만 동작한다. <br><br>
+기존의 SRCNN의 문제점은 다음과 같다. <br>
+1. Layer가 3개이기 때문에 좁은 context 밖에 반영하지 못 한다. <br>
+2. 학습 시 수렴 속도가 느리다. <br> 
+3. Single scale에 대해서만 동작한다. <br><br>
 
 이러한 문제점을 보완하기 위해 VDSR에서는 <br>
-20개의 3 x 3 Convolutional layer로 field를 확장해 반영할 수 있는 region context 를 확장했다. <br>
-SRCNN에서 사용한 Learning rate의 10^4배의 Learning rate를 적용하여 학습 속도를 높였다. <br>
-Single convolutional network이 multi-scale factor SR에 사용될 수 있음을 보였다. <br><br><br>
+1. 20개의 3 x 3 Convolutional layer로 field를 확장해 반영할 수 있는 region context 를 확장했다. <br>
+2. SRCNN에서 사용한 Learning rate의 10^4배의 Learning rate를 적용하여 학습 속도를 높였다. <br>
+3. Single convolutional network이 multi-scale factor SR에 사용될 수 있음을 보였다. <br><br><br>
 
 
 ## 제안된 네트워크
