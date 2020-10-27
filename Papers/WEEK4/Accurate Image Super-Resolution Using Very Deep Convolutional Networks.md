@@ -42,3 +42,5 @@ SRCNN은 3개 이상의 weight layer에서 우수한 성능을 보이지 않는�
 깊은 모델은 성능을 향상시킬 수 있지만, network를 정의하기 위해 더 많은 parameter를 필요로 한다. 따라서 네트워크를 저장하고 검색하기에 경제적인 방법인 multi-scale model을 제안한다. <br>
 multi-scale model은 몇 가지 특정 규모에 대한 training dataset은 하나의 큰 dataset으로 결합된다. multi-scale model은 MatConvNet1 패키지를 사용하여 모델을 구현한다. <br><br>
 
+논문 출처 <br>
+Jiwon Kim, Jung Kwon Lee and Kyoung Mu Lee, Department of ECE, ASRI, Seoul National University, Korea, "Accurate Image Super-Resolution Using Very Deep Convolutional Networks", https://arxiv.org/pdf/1511.04587.pdf
