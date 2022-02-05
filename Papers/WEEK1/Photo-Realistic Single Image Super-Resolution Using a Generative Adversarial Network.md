@@ -8,4 +8,4 @@
 저해상도(LR)에서 고해상도(HR) 이미지를 추정하는 어려운 작업을 초해상도(SR)이라고 한다. 결정되지 않은 SR 문제는 재구성된 SR의 텍스처 디테일이 일반적으로 가지지 않는 높은 업스케일 인자에서 두드러진다. supervised SR 알고리즘의 최적화 목표는 일반적으로 복구된 HR 영상과 원본 사이의 평균 제곱 오차(MSE)를 최소화하는 것이다. MSE를 최소화하는 것은 대 신호 대 잡음 비(PSNR)를 최대화하기 때문에 편리하지만, 이는 픽셀별 이미지 차이를 기반으로 정의되기 때문에 매우 제한적이다. 본 연구에서는 super-resolution generative adversarial network (SRGAN)을 제안하며, 여기에는 MSE와는 분리하여 스킵-연결을 포함한 ResNet를 채택하고 유일한 최적화 대상으로 한다. 또한, 이전 연구와는 달리 우리는 VGG 네트워크의 high-level feature maps과 HR 이미지와 구별이 어려운 이미지를 장려하는 discriminator를 결합하여 새로운 perceptual loss을 정의한다. <br><br>
  
 논문 출처 <br>
-LEDLG, Christian, et al. (2016). "Photo-Realistic Single Image Super-Resolution Using a Generative Adversarial Network" arXiv preprint arXiv : 1609.04802, http://arxiv.org/abs/1609. 04802).
+LEDLG, Christian, et al. (2016). "Photo-Realistic Single Image Super-Resolution Using a Generative Adversarial Network" arXiv preprint arXiv : 1609.04802, https://openaccess.thecvf.com/content_cvpr_2017/papers/Ledig_Photo-Realistic_Single_Image_CVPR_2017_paper.pdf).
